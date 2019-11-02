@@ -19,7 +19,9 @@
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
 
   {%- if config.symbols_count_time.total_symbols %}
-    <span class="post-meta-divider">|</span>
+    <!--2019.11.01修改，增加换行-->
+    <br/>
+    <!-- <span class="post-meta-divider">|</span> -->
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>

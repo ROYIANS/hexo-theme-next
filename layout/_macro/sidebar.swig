@@ -12,7 +12,11 @@
       {%- if display_toc %}
         {%- set next_toc_number = page.toc_number or theme.toc.number %}
         {%- set next_toc_max_depth = page.toc_max_depth or theme.toc.max_depth or 6 %}
-        {%- set toc = toc(page.content, { "class": "nav", list_number: next_toc_number, max_depth: next_toc_max_depth }) %}
+        {%- if page.password %}
+          {%- set toc = toc(page.origin, { "class": "nav", list_number: next_toc_number, max_depth: next_toc_max_depth }) %}
+        {%- else %}
+          {%- set toc = toc(page.content, { "class": "nav", list_number: next_toc_number, max_depth: next_toc_max_depth }) %}
+        {%- endif %}
         {%- set display_toc = toc.length > 1 and display_toc %}
       {%- endif %}
 

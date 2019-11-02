@@ -11,6 +11,14 @@
 
 <div>
 <ul class="post-copyright">
+  <li>
+    <strong>{{ __('post.created') + __('symbol.colon') }}</strong>
+    {{full_date(post.date) }}
+  </li>
+  <li>
+    <strong>{{__('post.modified') + __('symbol.colon') }}</strong>
+    {{ full_date(post.updated) }}
+  </li>
   <li class="post-copyright-author">
     <strong>{{ __('post.copyright.author') + __('symbol.colon') }} </strong>
     {{- page.author or author }}

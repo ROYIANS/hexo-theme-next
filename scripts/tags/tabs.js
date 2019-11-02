@@ -7,6 +7,7 @@
 'use strict';
 
 function postTabs(args, content) {
+  console.log(content);
   var tabBlock = /<!--\s*tab (.*?)\s*-->\n([\w\W\s\S]*?)<!--\s*endtab\s*-->/g;
 
   args = args.join(' ').split(',');
