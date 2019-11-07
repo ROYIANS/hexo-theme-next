@@ -58,5 +58,6 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
+{% include '_partials/sidebar/qplayer.swig' %}
 </body>
 </html>

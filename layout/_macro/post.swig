@@ -13,7 +13,7 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="{{ title }}">
     </span>
-
+{######
     {%- if is_index %}
        <h2>
        <span>>_</span>
@@ -21,8 +21,8 @@
        {{ next_url(post.path, post.title or __('post.untitled'), {class: 'post-title-link', itemprop: 'url'}) }}
        </h2>
     {%- endif %}
-
-    {%- if not is_index %}
+########}
+    
     {%- if post.header !== false %}
       <header class="post-header">
         <{%- if theme.seo %}h2{% else %}h1{%- endif %} class="post-title{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="name headline">
@@ -172,7 +172,7 @@
         </div>
       </header>
     {%- endif %}
-    {%- endif %}
+
     {#################}
     {### POST BODY ###}
     {#################}
@@ -194,7 +194,6 @@
       {%- endif %}
 
       {%- if is_index %}
-      {#########
         {%- if post.description and theme.excerpt_description %}
           {{ post.description }}
           <!--noindex-->
@@ -220,7 +219,6 @@
         {% else %}
           {{ post.content }}
         {%- endif %}
-        ###############}
       {% else %}
         {{ post.content }}
       {%- endif %}
@@ -289,11 +287,9 @@
         {%- endif %}
       </footer>
     {% else %}
-    {#########
       <footer class="post-footer">
         <div class="post-eof"></div>
       </footer>
-      #########}
     {%- endif %}
   </article>
   {######################}
