@@ -8,7 +8,9 @@
     theme.footer.beian.gongan_num + ' ') }}
   </div>
 {%- endif %}
-
+<script data-ad-client="ca-pub-3540583534412085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script id="myhk" src="https://player.lmih.cn/player/js/player.js" key="157311511518" m="1"></script>
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
