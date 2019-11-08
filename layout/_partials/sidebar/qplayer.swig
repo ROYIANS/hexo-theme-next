@@ -13,11 +13,11 @@
 				q.id = 501873788; //类型所对应的id
 				q.isAuto = false; //是否自动播放，默认false
 				q.isRandom = true; //是否随机播放，默认true
-				q.isRotate = true; //封面是否旋转，默认true
+				q.isRotate = false; //封面是否旋转，默认true
 			})(QPlayer);
 		</script>
 <div id="QPlayer">
-			<div class="body">
+			<div class="body" hidden>
 				<div class="player">
 					<span class="cover">
 						<img src="https://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106">
@@ -56,3 +56,4 @@
 		</div>
 
 		<div id="Qlyric" style="visibility: hidden;"><ol></ol></div>
+		<div id="QQmodel" class="QQmodel" style="visibility: hidden;"><h1 id="QQclose"><a rel="关闭"> X </a></h1><h2>歌曲列表</h2><div id="QQlist"></div></div>

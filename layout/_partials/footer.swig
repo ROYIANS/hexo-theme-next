@@ -8,7 +8,7 @@
     theme.footer.beian.gongan_num + ' ') }}
   </div>
 {%- endif %}
-<script data-ad-client="ca-pub-3540583534412085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}

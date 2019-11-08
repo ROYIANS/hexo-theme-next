@@ -1,5 +1,5 @@
 <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="site-author-image" itemprop="image" alt="{{ author }}"
+  <img id="QQcover" class="QQisrotate site-author-image" itemprop="image" alt="{{ author }}"
     src="{{ url_for(theme.avatar.url or theme.images + '/avatar.gif') }}">
   <p class="site-author-name" itemprop="name">{{ author }}</p>
   <div class="site-description" itemprop="description">{{ description }}</div>
@@ -101,7 +101,38 @@
   </div>
 {%- endif %}
 
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5u129bxr3id&amp;m=2&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;s=175" async="async"></script>
+<div hidden><script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5u129bxr3id&amp;m=2&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;s=175" async="async"></script></div>
+
+<br/>
+<div class="site-description" style="font-size:8px;" id="QQtitle"></div>
+
+<nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a id = "QQprev">
+        
+          <span class="site-state-item-count"><i class="fa fa-fw fa-step-backward"></i></span>
+          <span class="site-state-item-name">上一首</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-posts">
+          <a id = "QQplay">
+        
+          <span class="site-state-item-count"><i class="fa fa-fw fa-play"></i></span>
+          <span class="site-state-item-name">播放/暂停</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-posts">
+          <a id = "QQnext">
+        
+          <span class="site-state-item-count"><i class="fa fa-fw fa-step-forward"></i></span>
+          <span class="site-state-item-name">下一首</span>
+        </a>
+      </div>
+</nav>
+<br/>
+<a id = "QQgeci" class="links-of-author-item">歌词</a><span> | <span>
+<a id = "QQliebiao" class="links-of-author-item">歌单</a>
+
 
 {%- if theme.creative_commons.license and theme.creative_commons.sidebar %}
   <div class="cc-license motion-element" itemprop="license">

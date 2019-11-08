@@ -125,12 +125,12 @@ scheme: Muse
 # External url should start with http:// or https://
 menu:
   home: / || home
-  about: /about/ || user
-  tags: /tags/ || tags
+  #about: /about/ || user
+  #tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
   comments: /comments/ || comments
-  schedule: /schedule/ || calendar
+  #schedule: /schedule/ || calendar
   visitor: /visitor/ || globe
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -327,7 +327,7 @@ tagcloud:
 # Google Calendar
 # Share your recent schedule to others via calendar page.
 calendar:
-  calendar_id: z1294686101%40gmail.com # Your Google account E-Mail
+  calendar_id:  # Your Google account E-Mail
   api_key: 
   orderBy: startTime
   offsetMax: 24 # Time Range
@@ -692,7 +692,7 @@ google_analytics:
   localhost_ignored: true
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
-  only_pageview: false
+  only_pageview: true
 
 # Baidu Analytics
 baidu_analytics: f519f7f19502f59a9d622978cb3f5959 # <app_id>
