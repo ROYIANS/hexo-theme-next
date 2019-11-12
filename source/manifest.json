@@ -1,0 +1,27 @@
+{
+    "name": "小梦岛 - ROYIANS",
+    "short_name": "小梦岛",
+    "theme_color": "#222222",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "Scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/images/logo.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/logo.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/logo.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "splash_pages": null
+}

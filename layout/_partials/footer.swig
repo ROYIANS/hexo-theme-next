@@ -9,6 +9,10 @@
   </div>
 {%- endif %}
 
+<div hidden><script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5u129bxr3id&amp;m=2&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;s=175" async="async"></script></div>
+
+<div hidden id="QQcover" class="QQcover QQisrotate"></div>
+
 
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}

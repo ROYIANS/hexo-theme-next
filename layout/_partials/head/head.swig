@@ -99,3 +99,12 @@
     sidebarPadding: 40
   };
 </script>
+
+<script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script> 
+<script>
+    infiniteScroll({
+      post: '.post-block',
+      color: '#222222',
+      style: 'line-scale-pulse-out'
+    })
+</script>

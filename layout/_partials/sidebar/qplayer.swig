@@ -13,7 +13,7 @@
 				q.id = 501873788; //类型所对应的id
 				q.isAuto = false; //是否自动播放，默认false
 				q.isRandom = true; //是否随机播放，默认true
-				q.isRotate = false; //封面是否旋转，默认true
+				q.isRotate = true; //封面是否旋转，默认true
 			})(QPlayer);
 		</script>
 <div id="QPlayer">
@@ -52,7 +52,7 @@
 			<div class="more">
 				<ol class="list"></ol>
 			</div>
-			<audio></audio>
+			<audio id="QQaudio"></audio>
 		</div>
 
 		<div id="Qlyric" style="visibility: hidden;"><ol></ol></div>

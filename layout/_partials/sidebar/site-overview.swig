@@ -1,5 +1,5 @@
 <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img id="QQcover" class="QQisrotate site-author-image" itemprop="image" alt="{{ author }}"
+  <img class="site-author-image" itemprop="image" alt="{{ author }}"
     src="{{ url_for(theme.avatar.url or theme.images + '/avatar.gif') }}">
   <p class="site-author-name" itemprop="name">{{ author }}</p>
   <div class="site-description" itemprop="description">{{ description }}</div>
@@ -102,7 +102,13 @@
 {%- endif %}
 
 <div class="site-description" style="font-size:8px;" id="QQtitle"></div>
-
+<br/>
+<div><span id="QQtimer">加载中...</span></div>
+<div id="QQprogress">
+							<div id="QQalready" style="width:0%;">
+							</div>
+						</div>
+<br/>
 <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a id = "QQprev">
@@ -114,7 +120,7 @@
       <div class="site-state-item site-state-posts">
           <a id = "QQplay">
         
-          <span class="site-state-item-count"><i class="fa fa-fw fa-play"></i></span>
+          <span class="site-state-item-count"><i id="QQplaybtn" class="fa fa-fw fa-play"></i></span>
           <span class="site-state-item-name">播放/暂停</span>
         </a>
       </div>
@@ -129,10 +135,6 @@
 <br/>
 <a id = "QQgeci" class="links-of-author-item">歌词</a><span> | <span>
 <a id = "QQliebiao" class="links-of-author-item">歌单</a>
-
-<div hidden><script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5u129bxr3id&amp;m=2&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;s=175" async="async"></script></div>
-
-
 
 
 {%- if theme.creative_commons.license and theme.creative_commons.sidebar %}
