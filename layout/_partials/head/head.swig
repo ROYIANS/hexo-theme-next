@@ -48,6 +48,8 @@
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
 
+<link rel="stylesheet" href="/css/mytheme.css">
+
 {{ next_font() }}
 
 {%- set font_awesome_uri = theme.vendors.fontawesome or next_vendors('font-awesome/css/font-awesome.min.css') %}

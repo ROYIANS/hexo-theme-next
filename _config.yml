@@ -132,6 +132,7 @@ menu:
   comments: /comments/ || comments
   #schedule: /schedule/ || calendar
   visitor: /visitor/ || globe
+  books: /books/ || book
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
@@ -436,19 +437,19 @@ font:
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
+    family: Long Cang
     size: 
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
-    size: 1.4
+    family: 
+    size: 1.5
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
+    family: 
 
   # Font settings for <code> and code blocks.
   codes:
@@ -533,7 +534,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
@@ -627,9 +628,9 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
-  appid: KNcQSontV3macob1AuySeLCI-gzGzoHsz # Your leancloud application appid
-  appkey: XQoDM9LJmKlkjPMJ7WGn2qbU # Your leancloud application appkey
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  appid:  # Your leancloud application appid
+  appkey:  # Your leancloud application appkey
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -688,7 +689,7 @@ add_this_id:
 
 # Google Analytics
 google_analytics:
-  tracking_id: #UA-112028390-1 # <app_id>
+  tracking_id: UA-112028390-1 # <app_id>
   localhost_ignored: true
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
@@ -701,7 +702,7 @@ baidu_analytics: f519f7f19502f59a9d622978cb3f5959 # <app_id>
 growingio_analytics: # <project_id>
 
 # CNZZ count
-cnzz_siteid:
+cnzz_siteid: 4739565
 
 # Tencent analytics
 tencent_analytics: # <app_id>

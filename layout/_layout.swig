@@ -9,7 +9,7 @@
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage" style="background:url(/images/bak.svg);">
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
     {% include '_partials/sidebar/qplayer.swig' %}
@@ -26,6 +26,9 @@
           <div class="content">
             {% block content %}{% endblock %}
           </div>
+          {%- if is_post() and page.comments %}
+            <div class="comments"><script async src="https://comments.app/js/widget.js?2" data-comments-app-website="8GJ6_DjH" data-limit="5" data-color="343638" data-colorful="1" data-page-id="{{ page.abbrlink }}"></script></div>
+          {% endif %}
           {% include '_partials/comments.swig' %}
         </div>
         {%- if theme.sidebar.display !== 'remove' %}
