@@ -3,11 +3,16 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <meta name="generator" content="Hexo {{ hexo_version }}">
 
+<link rel="stylesheet" href="/css/mytheme.css">
+<link rel="stylesheet" href="/font/ROYIANS.css">
+<link rel="stylesheet" href="/font/LDL/LDL.css">
+
+
 {%- if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}">
 {%- endif %}
 {%- if theme.favicon.medium %}
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.medium) }}">
+<link rel="icon" id="headicon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.medium) }}">
 {%- endif %}
 {%- if theme.favicon.small %}
   <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for(theme.favicon.small) }}">
@@ -20,7 +25,13 @@
 {%- endif %}
 {%- if theme.favicon.ms_browserconfig %}
   <meta name="msapplication-config" content="{{ url_for(theme.favicon.ms_browserconfig) }}">
-{%- endif %}
+{%- endif %} 
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/sadness.js"></script>
+<script src="/lib/Qplayer/jquery.marquee.min.js"></script>
+<link rel="stylesheet" href="/live2d/css/live2d.css" />
+
 
 {%- if theme.rss === '' and config.feed.path %}
   {%- set theme = theme | attr('rss', config.feed.path) %}
@@ -47,8 +58,6 @@
 {%- endif %}
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
-
-<link rel="stylesheet" href="/css/mytheme.css">
 
 {{ next_font() }}
 
@@ -100,13 +109,4 @@
     },
     sidebarPadding: 40
   };
-</script>
-
-<script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script> 
-<script>
-    infiniteScroll({
-      post: '.post-block',
-      color: '#222222',
-      style: 'line-scale-pulse-out'
-    })
 </script>

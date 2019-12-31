@@ -14,7 +14,7 @@ reminder: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
-  enable: false
+  enable: true
 
 # Remove unnecessary files after hexo generate.
 minify: true
@@ -40,16 +40,16 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/logo.png
+  small: 
   medium: /images/logo.png
-  apple_touch_icon: /images/logo.png
-  safari_pinned_tab: /images/logo.png
-  #android_manifest: /images/manifest.json
+  apple_touch_icon: 
+  safari_pinned_tab: 
+  android_manifest: /manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
 # hexo-generator-feed required for rss support. Leave rss as blank to use site's feed link.
 # Set rss to false to disable feed link. Set rss to specific value if you have burned your feed already.
-rss:
+rss: atom.xml
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -126,10 +126,11 @@ scheme: Muse
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
+  tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  comments: /comments/ || comments
+  #topic: /topic/ || hashtag
+  comment: /comment/ || comment
   #schedule: /schedule/ || calendar
   visitor: /visitor/ || globe
   books: /books/ || book
@@ -162,7 +163,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: always
+  display: hide
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
@@ -294,7 +295,7 @@ related_posts:
   title: # Custom header, leave empty to use the default one
   display_in_home: false
   params:
-    maxCount: 2
+    maxCount: 3
     #PPMixingRate: 0.0
     #isDate: false
     #isImage: false
@@ -382,9 +383,9 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: true
+  enable: false
   # Available values: top | bottom
-  position: top
+  position: bottom
   color: "#222"
   height: 3px
 
@@ -431,14 +432,14 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Fira Code
+    family: 
     size: 0.9
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family: Long Cang
-    size: 
+    family: 
+    size: 1.8
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
@@ -477,7 +478,7 @@ seo: true
 index_with_subtitle: false
 
 # Automatically add external URL with Base64 encrypt & decrypt.
-exturl: true
+exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
@@ -547,12 +548,12 @@ lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
-pangu: true
+pangu: false
 
 # Quicklink Support
 # For more information: https://github.com/GoogleChromeLabs/quicklink
 quicklink:
-  enable: true
+  enable: false
 
   # Quicklink (quicklink.umd.js script) is loaded on demand.
   # Add `quicklink: true` in Front-matter of the page or post you need.
@@ -583,7 +584,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: valine
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Modify texts or order for any navs, here are some examples.
@@ -652,17 +653,17 @@ livere_uid: # <your_uid>
 # Demo: https://gitalk.github.io
 # For more information: https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  enable: true
+  github_id: Little-Dreamland # GitHub repo owner
+  repo: Little-Dreamland # Repository name to store issues
+  client_id: 8bf5ef6ce8bfe8e7537f # GitHub Application Client ID
+  client_secret: ab8a6347aa3dd45fb4ae6cd73b8ad6428e0e57e5 # GitHub Application Client Secret
+  admin_user: ROYIANS # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 
 # ---------------------------------------------------------------
@@ -674,7 +675,7 @@ gitalk:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id:     # <app_id>
+  id:     21985 # <app_id>
   color:  fc6423
 
 # AddThis Share. See: https://www.addthis.com
@@ -738,7 +739,7 @@ busuanzi_count:
   total_visitors: true
   total_visitors_icon: user
   total_views: true
-  total_views_icon: eye
+  total_views_icon: fire
   post_views: true
   post_views_icon: eye
 

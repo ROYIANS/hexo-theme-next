@@ -14,8 +14,9 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
-  comments: 留言板
-  visitor: 访客地图
+  #topic: 话题
+  comment: 留言版
+  visitor: 访客
   music: 音乐
   books: 书单
 sidebar:

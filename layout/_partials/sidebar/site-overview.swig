@@ -111,10 +111,10 @@
 <br/>
 <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a id = "QQprev">
+          <a id = "QQgeci">
         
-          <span class="site-state-item-count"><i class="fa fa-fw fa-step-backward"></i></span>
-          <span class="site-state-item-name">上一首</span>
+          <span class="site-state-item-count"><i class="fa fa-fw fa-font"></i></span>
+          <span class="site-state-item-name">歌词</span>
         </a>
       </div>
       <div class="site-state-item site-state-posts">
@@ -125,16 +125,14 @@
         </a>
       </div>
       <div class="site-state-item site-state-posts">
-          <a id = "QQnext">
+          <a id = "QQliebiao">
         
-          <span class="site-state-item-count"><i class="fa fa-fw fa-step-forward"></i></span>
-          <span class="site-state-item-name">下一首</span>
+          <span class="site-state-item-count"><i class="fa fa-fw fa-list"></i></span>
+          <span class="site-state-item-name">歌单</span>
         </a>
       </div>
 </nav>
 <br/>
-<a id = "QQgeci" class="links-of-author-item">歌词</a><span> | <span>
-<a id = "QQliebiao" class="links-of-author-item">歌单</a>
 
 
 {%- if theme.creative_commons.license and theme.creative_commons.sidebar %}

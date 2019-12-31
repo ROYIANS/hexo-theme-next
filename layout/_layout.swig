@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ config.language }}">
+<html lang="{{ config.language }}" {%- if page.type and page.type === 'topic' %}xmlns:wb="http://open.weibo.com/wb"{% endif %}>
 <head>
+  
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}
   {{- next_inject('head') }}
@@ -10,6 +11,15 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+
+{% include '_partials/live2d.swig' %}
+<script>
+var message_Path = '/live2d/';
+var talkAPI = "";
+</script>
+<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
     {% include '_partials/sidebar/qplayer.swig' %}
@@ -26,9 +36,11 @@
           <div class="content">
             {% block content %}{% endblock %}
           </div>
+          {####
           {%- if is_post() and page.comments %}
             <div class="comments"><script async src="https://comments.app/js/widget.js?2" data-comments-app-website="8GJ6_DjH" data-limit="5" data-color="343638" data-colorful="1" data-page-id="{{ page.abbrlink }}"></script></div>
           {% endif %}
+          ####}
           {% include '_partials/comments.swig' %}
         </div>
         {%- if theme.sidebar.display !== 'remove' %}

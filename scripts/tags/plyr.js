@@ -4,7 +4,13 @@ function plyrVideo(args, content) {
     if (args[0]==undefined) {
       args[0] = "player";
     }
-    return '<link rel="stylesheet" href="https://cdn.bootcss.com/plyr/3.5.6/plyr.css" /><script src="https://cdn.bootcss.com/plyr/3.5.6/plyr.js"></script><video poster="/path/to/poster.jpg" id="'+args[0]+'" playsinline controls><source src="'+content+'" type="video/mp4" /></video><script>const '+args[0]+' = new Plyr(\'#'+args[0]+'\');</script>';
+
+    if (content==undefined) {
+      content = " ";
+    } else {
+      content = " src='"+content+"' ";
+    }
+    return '<link rel="stylesheet" href="https://cdn.bootcss.com/plyr/3.5.6/plyr.css" /><script src="https://cdn.bootcss.com/plyr/3.5.6/plyr.js"></script><video poster="https://api.dujin.org/bing/1920.php" id="'+args[0]+'" playsinline controls><source id="video-'+args[0]+'" '+content+' type="video/mp4" /></video><script>const '+args[0]+' = new Plyr(\'#'+args[0]+'\');</script>';
 }
 
 function plyrAudio(args, content) {

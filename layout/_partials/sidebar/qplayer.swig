@@ -1,7 +1,6 @@
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
 <link href="/lib/Qplayer/style.css" rel="stylesheet">
-		<script src="https://cdn.bootcss.com/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
-		<script src="/lib/Qplayer/script.js"></script>
+<script src="/lib/Qplayer/script.js"></script>
 		<script>
 			(function (q) {
 				/* 目前只支持网易云音乐的这几种类型

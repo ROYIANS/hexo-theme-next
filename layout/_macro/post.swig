@@ -1,3 +1,11 @@
+{%- if is_post() %}
+<script>
+document.getElementById("headicon").href="https://avatars.dicebear.com/v2/identicon/{{page.abbrlink}}.svg";
+</script>
+{%- endif %}
+
+
+
   {##################}
   {### POST BLOCK ###}
   {##################}

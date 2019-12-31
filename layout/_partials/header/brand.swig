@@ -11,7 +11,7 @@
     <div>
       <a href="{{ config.root }}" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">{{ title }}</span>
+        <span class="site-title glitch is-glitching" data-text="小梦岛">小梦岛</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
